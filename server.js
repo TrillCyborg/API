@@ -1,7 +1,5 @@
 var express = require('express');
 var app = express();
-var axios = require("axios");
-var cheerio = require("cheerio");
 var cors = require('cors');
 const config = require('./config.json');
 const Redis = require('ioredis');

@@ -1,9 +1,9 @@
-FROM node:13
+FROM node:12.16.1-alpine
 
-RUN mkdir -p /home/container
-WORKDIR /home/container
+WORKDIR /usr/src/app
 
-COPY . /home/container
-RUN npm i
+COPY . .
 
-CMD [ "node", "server.js" ]
+RUN npm install
+
+CMD [ "npm", "start" ]
