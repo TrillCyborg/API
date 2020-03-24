@@ -25,4 +25,4 @@ services:
     container_name: server
     restart: always
     ports:
-      - 80
+      - 4000
